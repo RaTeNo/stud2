@@ -258,7 +258,7 @@
                             <div class="s-top-form-item">
                               <div class="s-top-form-item-line flex flexalcenter flexbetween">
                                 <div class="s-top-form-item-file">
-                                  <div class="s-top-form-item-file-placeholder">Файлы (при наличии)</div>
+                                  <div class="s-top-form-item-file-placeholder">Файлы</div>
                                   <label class="flex flexalcenter flexcenter s-top-form-btn" for="file-upload"><span class="text">Добавить</span>
                                     <input id="file-upload" type="file">
                                   </label>
@@ -1040,7 +1040,7 @@
                   </div>
                   <div class="s-top-form-block">
                     <div class="s-top-form-item-file">
-                      <div class="s-top-form-item-file-placeholder">Файлы <span>(при наличии)</span>
+                      <div class="s-top-form-item-file-placeholder">Файлы 
                         <label class="flex flexalcenter flexcen s-top-form-btn" for="file-upload1"><span class="text">Добавить</span>
                           <input id="file-upload1" type="file">
                         </label>
@@ -1108,6 +1108,129 @@
                       <input id="check02" type="checkbox" name="agree" value="Даю согласие на обработку персональных данных" checked>
                       <label for="check02"><span class="icon"></span><span class="text">Даю согласие на обработку персональных данных</span></label>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="s-popup mfp-with-anim mfp-hide" id="popup2">
+      <div class="s-popup-inner">
+        <button class="mfp-close" title="Close (Esc)" type="button"><img class="svg" src="img/icon-close.svg" alt="img"></button>
+        <div class="s-top-form">
+          <form action="main.php" method="post" enctype="multipart/form-data">
+            <div class="s-top-form-title">Узнай стоимость своей работы</div>
+            <div class="s-top-form-descr flex flexalcenter">и получи бонус <strong class="flex flexnwr flexalcenter"><img src="img/top-gift.svg" alt="img"><span>200 руб.</span></strong> на первый заказ</div>
+            <div class="s-top-form-line flex">
+              <div class="s-top-form-block style1">
+                <div class="s-top-form-item">
+                  <select class="js-select-type" name="select-type">
+                    <option value=""></option>
+                    <option value="Курсовая">Курсовая</option>
+                    <option value="Диплом">Диплом</option>
+                    <option value="Курсовая">Курсовая</option>
+                  </select>
+                </div>
+              </div>
+              <div class="s-top-form-block style1">
+                <div class="s-top-form-item">
+                  <select class="js-select-subject" name="select-subject">
+                    <option value=""></option>
+                    <option value="Математика">Математика</option>
+                    <option value="Информатика">Информатика</option>
+                    <option value="Литература">Литература</option>
+                  </select>
+                </div>
+              </div>
+              <div class="s-top-form-block">
+                <div class="s-top-form-item">
+                  <input type="text" name="subject" placeholder="Тема">
+                </div>
+              </div>
+              <div class="s-top-form-block">
+                <div class="s-top-form-line flex">
+                  <div class="s-top-form-block">
+                    <div class="s-top-form-item">
+                      <select class="js-select-term" name="select-term">
+                        <option value=""></option>
+                        <option value="2 дня">2 дня</option>
+                        <option value="2 дня">2 дня</option>
+                        <option value="2 дня">2 дня</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="s-top-form-block">
+                    <div class="s-top-form-item">
+                      <div class="s-top-form-item pages flex flexalcenter">
+                        <div class="text">Страниц</div>
+                        <input type="text" name="pagesfrom" placeholder="От">
+                        <input type="text" name="pagesto" placeholder="До">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-top-form-hr"></div>
+            <div class="s-top-form-bottom">
+              <div class="s-top-form-line flex">
+                <div class="s-top-form-block">
+                  <div class="s-top-form-item">
+                    <textarea name="mes" placeholder="Комментарий"></textarea>
+                  </div>
+                </div>
+                <div class="s-top-form-block">
+                  <div class="s-top-form-item">
+                    <div class="s-top-form-item-line flex flexalcenter flexbetween">
+                      <div class="s-top-form-item-file">
+                        <div class="s-top-form-item-file-placeholder">Файлы</div>
+                        <label class="flex flexalcenter flexcenter s-top-form-btn" for="file-upload"><span class="text">Добавить</span>
+                          <input id="file-upload" type="file">
+                        </label>
+                      </div>
+                      <div class="s-top-form-item-check">
+                        <div class="b-checkbox">
+                          <input id="check1" type="checkbox" name="check1" value="Практическая часть">
+                          <label for="check1"><span class="icon"></span><span class="text">Практическая часть</span></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-top-form-item-line flex flexalcenter flexbetween">
+                      <div class="s-top-form-item input">
+                        <input type="text" name="email" placeholder="E-mail">
+                      </div>
+                      <div class="s-top-form-item select1">
+                        <select class="js-select-check" name="select-check">
+                          <option value="Antiplagiat.ru">Antiplagiat.ru</option>
+                          <option value="Antiplagiat.ru">Antiplagiat.ru</option>
+                          <option value="Antiplagiat.ru">Antiplagiat.ru</option>
+                        </select>
+                      </div>
+                      <div class="s-top-form-item">
+                        <select class="js-select-check" name="select-percent">
+                          <option value="50%">50%</option>
+                          <option value="50%">50%</option>
+                          <option value="50%">50%</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-top-form-item">
+              <div class="s-top-form-options flex flexnwr flexalcenter">
+                <div class="s-top-form-button">
+                  <button class="s-top-form-btn flex flexcenter flexalcenter" type="submit"><span>Узнать стоимость</span></button>
+                </div>
+                <div class="s-top-form-item-check">
+                  <div class="b-checkbox">
+                    <input id="check2" type="checkbox" name="agree" value="Даю согласие на обработку персональных данных" checked>
+                    <label for="check2"><span class="icon"></span><span class="text">Даю согласие на обработку персональных данных</span></label>
                   </div>
                 </div>
               </div>

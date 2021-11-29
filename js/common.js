@@ -52,6 +52,16 @@ document.addEventListener("DOMContentLoaded",function(){
  	}
  },
 });
+
+	 $.magnificPopup.open({
+         items: {
+            src: '#popup2'
+         },
+         mainClass: 'my-mfp-zoom-in',
+         removalDelay: 300,
+      }, 0);
+
+	 
 	$('#file-upload').change(function() {
     var filepath = this.value;
     var m = filepath.match(/([^\/\\]+)$/);
