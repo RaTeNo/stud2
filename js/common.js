@@ -450,6 +450,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		$('html, body').stop().animate({ scrollTop: $(href).offset().top - addOffset }, 1000)
 	})
+
+	$('.popup_menu').click(function (e) {
+		e.preventDefault()
+		$(".menu_auth").toggleClass("active")
+	});
+
 });
 
 

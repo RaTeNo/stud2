@@ -2327,3 +2327,47 @@
         width: 100%;
     }
 }
+
+
+@media print, (max-width: 1023px)
+{
+    .mobile_auth {
+        display: flex;
+        width: calc(100% - 240px);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .popup_menu img{
+        display: block;        
+        border: 2px solid #0DB960;
+        border-radius:50%;
+    }
+
+    .balance img{
+        display: block;        
+        margin-bottom: 5px;
+    }
+    .balance{
+        padding-left:5px;
+    }
+    .balance span{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        color: #1F213A;
+    }
+
+    .menu_auth{
+        right: 73px;
+    }
+}
+
+@media print, (max-width:565px)
+{
+    .mobile_auth {
+        width: calc(100% - 110px);
+    }
+}

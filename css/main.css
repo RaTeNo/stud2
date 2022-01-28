@@ -6972,3 +6972,123 @@ a
         height: 750px;
     }
 }
+
+
+
+/*Авотризация*/
+
+
+.auth .s-header-links li:after{
+    display: none;
+}
+
+.auth .s-header-links > li{
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 36px;
+    justify-content: space-between;
+}
+
+.auth .s-header-links >  li + li{
+    margin-left: 22px;
+}
+
+.auth .s-header-links li img{
+    display: block;
+    margin: 0 auto;
+}
+
+.auth .s-header-links li span{
+    margin-top: auto;
+}
+
+.auth .s-header-links li img.ava{
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+
+.auth .s-header-links li:last-child{
+    position: relative;
+}
+
+.menu_auth{
+    position: absolute;
+    top: calc(100% + 12px);
+    right: -10px;
+    padding: 16px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 22.305px 66.9151px -13.383px rgb(16 70 41 / 23%);
+    border-radius: 13px;
+    z-index: 100; 
+    display: none;   
+}
+
+
+.menu_auth.active{
+    display: block;
+}
+
+.menu_auth li + li{
+    border-top: 1px solid rgb(204 213 235 / 80%);
+}
+
+.menu_auth li a{
+    text-align: left;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 150%;
+    color: #1F213A;
+    display: block;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.menu_auth li a.user{
+    font-weight: bold;
+}
+
+.menu_auth li a:hover{
+    color: #0DB960;
+}
+
+.menu_auth:after{
+background: #FFFFFF;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    width: 12px;
+    height: 12px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 22px;
+}
+
+
+.counter{
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    display: block;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    color: #0DB960;
+    position: absolute;
+    top: 0;
+    right: calc(50% + -26px);
+}
+
+.mobile_auth{
+    display: none;
+}
